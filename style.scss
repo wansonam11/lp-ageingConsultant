@@ -130,7 +130,7 @@ button {
       margin: 0 4%;
     }
 
-    &__item {
+    li {
       width: 50%;
       margin-bottom: 32px;
 
@@ -142,7 +142,7 @@ button {
         margin-bottom: 14%;
       }
 
-      &.on {
+      &.is-current {
         a {
           color: #216724;
         }
@@ -151,7 +151,6 @@ button {
       a {
         color: #1F1F1F;
         font-size: 1.6rem;
-
 
         @media screen and (max-width: 1024px) {
           font-size: 1.4rem;
@@ -211,7 +210,6 @@ button {
         padding-bottom: 32px;
         font-size: 1.4rem;
         line-height: 1.75;
-
 
         @media screen and (max-width: 1024px) {
           padding-bottom: 4%;
@@ -667,237 +665,294 @@ button {
     }
   }
 
-#ageinghouse_consultation-swiper {
-  padding-bottom: 106px;
-}
-#swiper {
-  margin-left: 40px;
-  margin-bottom: -64px;
-  padding-bottom: 102px;
-  /* overflow: visible; */
-}  
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide h3 {
-  font-size: 2rem;
-  color: #FFF;
-  background: #216724;
-  text-align: center;
-  padding: 6px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.swiper-slide.slide1 h3:before {
-  content: '';
-  display: block;
-  background: url(./img/concern_icon01.svg);
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  background-size: contain;
-  background-position: center top;
-}
-.swiper-slide.slide2 h3:before {
-  content: '';
-  display: block;
-  background: url(./img/concern_icon02.svg);
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  background-size: contain;
-  background-position: center top;
-}
-.swiper-slide.slide3 h3:before {
-  content: '';
-  display: block;
-  background: url(./img/concern_icon03.svg);
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  background-size: contain;
-  background-position: center top;
-}
-.swiper-slide.slide1 h3:before,
-.swiper-slide.slide2 h3:before,
-.swiper-slide.slide3 h3:before {
-  padding-right: 16px;
-}
-.swiper-slide ul {
-  padding: 32px 8px;
-  background: #FFF;
-}
-.swiper-slide ul li {
-  font-size: 1.6rem;
-  line-height: 2;
-}
-.slide1,
-.slide2,
-.slide3 {
-  background-repeat:no-repeat;
-  background-position:center top;
-  background-size:cover;
-  background: #ccc;
-}
-.swiper-slide .swiper-cnt {
-  padding: 24px;
-  height: 340px;
-}
-.swiper-slide.slide1 .swiper-cnt {
-  background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/swipe__bg01.jpg');
-}
-.swiper-slide.slide2 .swiper-cnt {
-  background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/swipe__bg02.jpg');
-}
-.swiper-slide.slide3 .swiper-cnt {
-  background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/swipe__bg03.jpg');
-}
-.swiper-slide.slide1 .swiper-cnt,
-.swiper-slide.slide2 .swiper-cnt,
-.swiper-slide.slide3 .swiper-cnt {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-}
-.swiper-slide .swiper-cnt h4 {
-  font-size: 2rem;
-  padding-bottom: 24px;
-  text-align: center;
-}
-.swiper-slide .swiper-cnt p {
-  font-size: 1.6rem;
-  line-height: 2;
-  padding-top: 24px;
-  border-top: 1px solid #A7A7A7;
-}
-.swiper-backface-hidden .swiper-slide:last-of-type {
-  padding-right: 40px !important;
-  background: transparent;
-}
-.swiper-scrollbar {
-  max-width: 280px!important;
-  width: 100% !important;
-}
-.swiper-scrollbar-drag {
-  background: #216724;
-}
-.swiper-button-next, .swiper-button-prev {
-  top: 0;
-  transform: translateY(24px);
-}
-.swiper-button-next {
-  right: 0;
-}
-.swiper-button-prev {
-  right: 24px;
-}
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
-  top: unset!important;
-  left: unset!important;
-  right: unset!important; 
-  right: 0!important;
-  margin-right: 40px;
-}
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-  top: unset!important;
-  left: unset!important;
-  right: unset!important;
-  right: 48px!important;
-  margin-right: 30px;
-}
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 22px!important;
-  color: #1F1F1F!important;
-}
-.swiper-scrollbar.swiper-scrollbar-horizontal {
-  bottom: unset!important;
-  transform: translateY(24px);
-}
-@media(max-width: 1024px) {
-  #ageinghouse_consultation-solution {
-    padding-top: 12%;
-  }
-  #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner {
-    padding: 0 4%;
-  }
-  #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner h2 {
-    font-size: 1.6rem;
-  }
-  #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner .decoration__dots {
-    margin: 4% auto;
-  }
-  #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner .decoration__dots span {
-    transform: scale(0.8);
-  }
-  #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner .decoration__dots span:nth-of-type(even) {
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
   #ageinghouse_consultation-swiper {
-    padding-bottom: 12%;
+    padding-bottom: 106px;
   }
+
   #swiper {
-    margin-left: 4%;
+    margin-left: 40px;
+    margin-bottom: -64px;
+    padding-bottom: 102px;
+    /* overflow: visible; */
   }
+
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+
   .swiper-slide h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: #FFF;
+    background: #216724;
+    text-align: center;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .swiper-slide h3:before {
-    transform: scale(0.8);
+
+  .swiper-slide.slide1 h3:before {
+    content: '';
+    display: block;
+    background: url(./img/concern_icon01.svg);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-position: center top;
   }
+
+  .swiper-slide.slide2 h3:before {
+    content: '';
+    display: block;
+    background: url(./img/concern_icon02.svg);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .swiper-slide.slide3 h3:before {
+    content: '';
+    display: block;
+    background: url(./img/concern_icon03.svg);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-position: center top;
+  }
+
   .swiper-slide.slide1 h3:before,
   .swiper-slide.slide2 h3:before,
   .swiper-slide.slide3 h3:before {
-    padding-right: 2%;
+    padding-right: 16px;
   }
+
   .swiper-slide ul {
-    padding: 4% 2%;
+    padding: 32px 8px;
+    background: #FFF;
   }
+
   .swiper-slide ul li {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 2;
   }
+
+  .slide1,
+  .slide2,
+  .slide3 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background: #ccc;
+  }
+
+  .swiper-slide .swiper-cnt {
+    padding: 24px;
+    height: 340px;
+  }
+
+  .swiper-slide.slide1 .swiper-cnt {
+    background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/swipe__bg01.jpg');
+  }
+
+  .swiper-slide.slide2 .swiper-cnt {
+    background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/swipe__bg02.jpg');
+  }
+
+  .swiper-slide.slide3 .swiper-cnt {
+    background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/swipe__bg03.jpg');
+  }
+
+  .swiper-slide.slide1 .swiper-cnt,
+  .swiper-slide.slide2 .swiper-cnt,
+  .swiper-slide.slide3 .swiper-cnt {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .swiper-slide .swiper-cnt h4 {
+    font-size: 2rem;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+
+  .swiper-slide .swiper-cnt p {
+    font-size: 1.6rem;
+    line-height: 2;
+    padding-top: 24px;
+    border-top: 1px solid #A7A7A7;
+  }
+
   .swiper-backface-hidden .swiper-slide:last-of-type {
-    padding-right: 4%!important;
+    padding-right: 40px !important;
     background: transparent;
   }
-  .swiper-slide .swiper-cnt {
-    padding: 4%;
-    max-height: 200px;
+
+  .swiper-scrollbar {
+    max-width: 280px !important;
+    width: 100% !important;
   }
-  .swiper-slide .swiper-cnt h4 {
-    font-size: 1.6rem;
-    padding-bottom: 4%;
+
+  .swiper-scrollbar-drag {
+    background: #216724;
   }
-  .swiper-slide .swiper-cnt p {
-    font-size: 1.2rem;
-    padding-top: 4%;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 0;
+    transform: translateY(24px);
   }
-  .swiper-button-next, .swiper-rtl .swiper-button-prev {
-    margin-right: 6%;
+
+  .swiper-button-next {
+    right: 0;
   }
-  .swiper-button-prev, .swiper-rtl .swiper-button-next {
-    margin-right: 4%;
+
+  .swiper-button-prev {
+    right: 24px;
   }
-}
-@media(max-width: 640px) {
-  .swiper-slide h3 {
-    font-size: 1.4rem;
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+    right: 0 !important;
+    margin-right: 40px;
   }
-  .swiper-slide ul li {
-    font-size: 1.2rem;
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+    right: 48px !important;
+    margin-right: 30px;
   }
-  .swiper-slide .swiper-cnt h4 {
-    font-size: 1.4rem;
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 22px !important;
+    color: #1F1F1F !important;
   }
-  .swiper-slide .swiper-cnt p {
-    font-size: 1.2rem;
-  }
+
   .swiper-scrollbar.swiper-scrollbar-horizontal {
-    transform: translate(-24px, 24px) scale(0.8);
+    bottom: unset !important;
+    transform: translateY(24px);
   }
-}
+
+  @media(max-width: 1024px) {
+    #ageinghouse_consultation-solution {
+      padding-top: 12%;
+    }
+
+    #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner {
+      padding: 0 4%;
+    }
+
+    #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner h2 {
+      font-size: 1.6rem;
+    }
+
+    #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner .decoration__dots {
+      margin: 4% auto;
+    }
+
+    #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner .decoration__dots span {
+      transform: scale(0.8);
+    }
+
+    #ageinghouse_consultation-solution .ageinghouse_consultation-solution__inner .decoration__dots span:nth-of-type(even) {
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+
+    #ageinghouse_consultation-swiper {
+      padding-bottom: 12%;
+    }
+
+    #swiper {
+      margin-left: 4%;
+    }
+
+    .swiper-slide h3 {
+      font-size: 1.6rem;
+    }
+
+    .swiper-slide h3:before {
+      transform: scale(0.8);
+    }
+
+    .swiper-slide.slide1 h3:before,
+    .swiper-slide.slide2 h3:before,
+    .swiper-slide.slide3 h3:before {
+      padding-right: 2%;
+    }
+
+    .swiper-slide ul {
+      padding: 4% 2%;
+    }
+
+    .swiper-slide ul li {
+      font-size: 1.4rem;
+    }
+
+    .swiper-backface-hidden .swiper-slide:last-of-type {
+      padding-right: 4% !important;
+      background: transparent;
+    }
+
+    .swiper-slide .swiper-cnt {
+      padding: 4%;
+      max-height: 200px;
+    }
+
+    .swiper-slide .swiper-cnt h4 {
+      font-size: 1.6rem;
+      padding-bottom: 4%;
+    }
+
+    .swiper-slide .swiper-cnt p {
+      font-size: 1.2rem;
+      padding-top: 4%;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      margin-right: 6%;
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      margin-right: 4%;
+    }
+  }
+
+  @media(max-width: 640px) {
+    .swiper-slide h3 {
+      font-size: 1.4rem;
+    }
+
+    .swiper-slide ul li {
+      font-size: 1.2rem;
+    }
+
+    .swiper-slide .swiper-cnt h4 {
+      font-size: 1.4rem;
+    }
+
+    .swiper-slide .swiper-cnt p {
+      font-size: 1.2rem;
+    }
+
+    .swiper-scrollbar.swiper-scrollbar-horizontal {
+      transform: translate(-24px, 24px) scale(0.8);
+    }
+  }
 
 }
 
@@ -1198,6 +1253,7 @@ button {
 .works {
   padding-top: 64px;
   padding-bottom: 64px;
+
   @media screen and (max-width: 1024px) {
     padding-top: 6%;
     padding-bottom: 6%;
@@ -1207,6 +1263,7 @@ button {
     width: 100%;
     max-width: 432px;
     margin: 0 auto;
+
     @media screen and (max-width: 1024px) {
       padding: 0 4%;
       max-width: 100%;
@@ -1219,6 +1276,7 @@ button {
     line-height: 1.75;
     text-align: center;
     padding-bottom: 65px;
+
     @media screen and (max-width: 1024px) {
       font-size: 2.6rem;
       padding-bottom: 8%;
@@ -1242,87 +1300,105 @@ button {
     }
   }
 }
+
 #ageinghouse_consultation-works {
   padding-top: 64px;
 }
+
 .works__cnt {
   &:last-of-type {
-  padding-top: 56px;  
+    padding-top: 56px;
+  }
 }
-}
+
 .main__slide li {
   cursor: pointer;
+
   img {
     width: 100%;
     object-fit: cover;
   }
 }
+
 .thumbnail__slide {
   display: flex;
   margin-top: 4px;
 }
+
 .thumbnail__slide li {
-  width: calc(25% - 3px)!important;
+  width: calc(25% - 3px) !important;
   cursor: pointer;
   margin-right: 4px;
+
   img {
     width: 100%;
     object-fit: cover;
   }
 }
+
 .thumbnail__slide li:nth-of-type(4),
 .thumbnail__slide li:nth-of-type(8) {
-    margin-right: 0;
+  margin-right: 0;
 }
+
 .thumbnail__slide li:nth-of-type(-n+4) {
   margin-bottom: 4px;
 }
 
 .thumbnail__slide .slick-track {
-  transform: unset!important;
-  width:100% !important;
+  transform: unset !important;
+  width: 100% !important;
 }
-button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
-  display: block!important;
+
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+  display: block !important;
   z-index: 2;
 }
-.slick-arrow:before{
-  content:""!important;
-  width: 100%!important;
-  height: 100%!important;
+
+.slick-arrow:before {
+  content: "" !important;
+  width: 100% !important;
+  height: 100% !important;
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .slick-next {
-  right: 16px!important;
+  right: 16px !important;
   width: 40px !important;
   height: 40px !important;
 }
-.slick-next:before{
-  background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/slide__next.svg')!important;
+
+.slick-next:before {
+  background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/slide__next.svg') !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .slick-prev {
-  left: 16px!important;
+  left: 16px !important;
   width: 40px !important;
   height: 40px !important;
 }
-.slick-prev:before{
-  background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/slide__prev.svg')!important;
+
+.slick-prev:before {
+  background: url('https://in-lp.com/wp-content/themes/instagramLP/img/ageinghouse_consultation/slide__prev.svg') !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @media(max-width: 1024px) {
 
   .slick-next {
-    right: 2%!important;
+    right: 2% !important;
     width: 40px !important;
     height: 40px !important;
   }
+
   .slick-prev {
-    left: 2%!important;
+    left: 2% !important;
     width: 40px !important;
     height: 40px !important;
   }
@@ -1468,6 +1544,7 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
     margin-bottom: 64px;
     position: relative;
     padding-bottom: 24px;
+
     @media screen and (max-width: 1024px) {
       margin-bottom: 14%;
       padding-bottom: 2%;
@@ -1489,6 +1566,7 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
+
     @media screen and (max-width: 1024px) {
       padding: 8% 0;
       font-size: 1.4rem;
@@ -1503,6 +1581,7 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
       font-size: 2.4rem;
       font-weight: 400;
       margin-right: 16px;
+
       @media screen and (max-width: 1024px) {
         margin-right: 1.6%;
         font-size: 2rem;
@@ -1524,11 +1603,16 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
     }
   }
 
+  &__sheet {
+    display: none;
+  }
+
   &__inner {
     width: 352px;
     display: flex;
     gap: 8px;
     margin: 0 auto;
+
     @media screen and (max-width: 640px) {
       width: 100%;
     }
@@ -1546,10 +1630,11 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
 
     span {
       position: absolute;
-      right:5%;
+      right: 5%;
       bottom: 5%;
       width: 30px;
       height: 30px;
+
       img {
         width: 100%;
       }
@@ -1570,10 +1655,24 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
       margin-bottom: 6%;
     }
 
+
     &__txt {
-      color: #216724;
+
       padding: 16px 0;
       font-size: 1.6rem;
+      background-color: #216724;
+      border-radius: 30px;
+      color: #fff;
+
+      &.is-active {
+        background-color: #fff;
+        border: none;
+        color: #216724;
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
 
       @media screen and (max-width: 1024px) {
         padding: 4% 0;
@@ -1590,7 +1689,8 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
         border-right: 1px solid;
         border-top: 1px solid;
         transition: .4s;
-        transform: rotate(-45deg);
+        //transform: rotate(-45deg);
+        transform: rotate(135deg);
       }
     }
   }
@@ -1599,7 +1699,7 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
     display: inline-block;
     width: 78px;
     position: absolute;
-    top: -10%;
+    top: -38px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -1607,16 +1707,46 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
       transform: translateX(-50%) scale(0.7);
     }
 
-    @media screen and (max-width: 640px) {
-      top: -7%;
-    }
-
-    @media screen and (max-width: 480px) {
-      top: -10%;
-    }
-
     img {
       width: 100%;
+    }
+  }
+
+  .modal_popup {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &_inner {
+      width: 100%;
+      height: 100%;
+      background-color: #cccccc80;
+      position: relative;
+      cursor: pointer;
+    }
+
+    &_cnt {
+      max-width: 500px;
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      span {
+        cursor: pointer;
+        position: absolute;
+        top: -25px;
+        right: -20px;
+      }
     }
   }
 }
@@ -1765,45 +1895,90 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 1.5;
-        padding: 24px 16px;
+        padding: 0 16px;
 
         @media screen and (max-width: 1024px) {
           padding: 4%;
           font-size: 1.4rem;
         }
 
+        @media screen and (max-width: 375px) {
+          width: calc(100% - 23px);
+        }
+
+
         &__short {
+          cursor: pointer;
           position: relative;
           padding-right: 76px;
           padding-bottom: 24px;
-
-          @media screen and (max-width: 1024px) {
-            padding-right: 10%;
-            padding-bottom: 4%;
-          }
-        }
-
-        &__more {
-          border-top: 1px solid #fff;
           padding-top: 24px;
-
-          @media screen and (max-width: 1024px) {
-            padding-top: 2.4%;
-          }
-
-          @media screen and (max-width: 640px) {
-            padding-top: 4.8%;
-          }
 
           &::after {
             content: "";
             position: absolute;
-            top: 40px;
-            right: -20px;
+            top: 23px;
+            right: -38px;
             transform: translateY(-50%);
             border-width: 9px 2px 9px 20px;
             border-style: solid;
             border-color: transparent transparent transparent #216724;
+
+            @media screen and (max-width: 640px) {
+              right: -10%;
+            }
+
+            @media screen and (max-width: 500px) {
+              right: -12%;
+            }
+
+            @media screen and (max-width: 468px) {
+              right: -13%;
+            }
+
+            @media screen and (max-width: 375px) {
+              right: -15%;
+            }
+          }
+
+          @media screen and (max-width: 1024px) {
+            padding-right: 13%;
+            padding-top: 2%;
+            padding-bottom: 4%;
+          }
+
+          &.is-active {
+
+            //display: none;
+            span {
+              transition: .3s;
+
+              small {
+                display: none;
+                transition: .3s;
+              }
+
+              &::before {
+                transform: rotate(45deg);
+
+              }
+
+              &::after {
+                transform: rotate(135deg);
+
+              }
+            }
+          }
+        }
+
+        &__more {
+          padding-bottom: 24px;
+          border-top: 1px solid #fff;
+          padding-top: 24px;
+          display: none;
+
+          @media screen and (max-width: 1024px) {
+            padding-bottom: 2%;
           }
         }
       }
@@ -1828,7 +2003,7 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
     height: 20px;
 
     @media screen and (max-width: 1024px) {
-      top: 0;
+      top: 25%;
     }
 
     &__txt {
@@ -1838,10 +2013,6 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
       right: 0;
       top: 40%;
       transform: translateY(-40%);
-
-      @media screen and (max-width: 1024px) {
-        display: none;
-      }
     }
 
     &::before {
@@ -1855,10 +2026,6 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
       right: 4px;
       transform: translateY(-50%);
       transition: .3s;
-
-      @media screen and (max-width: 1024px) {
-        transform: rotate(45deg);
-      }
     }
 
     &::after {
@@ -1872,15 +2039,9 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
       right: 4px;
       transform: translateY(-50%) rotate(90deg);
       transition: .3s;
-
-      @media screen and (max-width: 1024px) {
-        transform: rotate(135deg);
-      }
     }
   }
 }
-
-
 
 //access
 .access {
@@ -2271,6 +2432,10 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
 
       @media screen and (max-width: 1024px) {
         padding-top: 4%;
+      }
+
+      @media screen and (max-width: 640px) {
+        gap: 10px;
       }
 
       &__img {

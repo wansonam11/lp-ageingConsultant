@@ -35,31 +35,31 @@
           <img src="./img/head_logo.svg" alt="">
         </h1>
         <ul class="header__nav">
-          <li class="header__nav__item">
+          <li class="header__nav__item-reason js-anchor">
             <a href="">選ばれる理由</a>
           </li>
-          <li class="header__nav__item">
+          <li class="header__nav__item-voice js-anchor">
             <a href="">お客様の声</a>
           </li>
-          <li class="header__nav__item">
+          <li class="header__nav__item-works js-anchor">
             <a href="">施工事例</a>
           </li>
-          <li class="header__nav__item">
+          <li class="header__nav__item-qna js-anchor">
             <a href="">よくあるご相談</a>
           </li>
-          <li class="header__nav__item">
+          <li class="header__nav__item-flow js-anchor">
             <a href="">相談当日の流れ</a>
           </li>
-          <li class="header__nav__item">
+          <li class="header__nav__item-access js-anchor">
             <a href="">店舗情報</a>
           </li>
-          <li class="header__nav__item">
+          <li class="header__nav__item-staff js-anchor">
             <a href="">スタッフ</a>
           </li>
-          <li class="header__nav__item">
+          <li class="header__nav__item-promise js-anchor">
             <a href="">個別相談でのお約束</a>
           </li>
-          <li class="header__nav__item on">
+          <li class="header__nav__item-company js-anchor">
             <a href="">会社概要</a>
           </li>
         </ul>
@@ -100,31 +100,31 @@
               </div>
               <ul>
                 <li>
-                  <a href="">選ばれる理由</a>
+                  <a href="#reason">選ばれる理由</a>
                 </li>
                 <li>
-                  <a href="">施工事例</a>
+                  <a href="#works">施工事例</a>
                 </li>
                 <li>
-                  <a href="">相談当日の流れ</a>
+                  <a href="#flow">相談当日の流れ</a>
                 </li>
                 <li>
-                  <a href="">スタッフ</a>
+                  <a href="#staff">スタッフ</a>
                 </li>
                 <li>
-                  <a href="">お客様の声</a>
+                  <a href="#voice">お客様の声</a>
                 </li>
                 <li>
-                  <a href="">よくあるご相談</a>
+                  <a href="#qna">よくあるご相談</a>
                 </li>
                 <li>
-                  <a href="">店舗情報</a>
+                  <a href="#access">店舗情報</a>
                 </li>
                 <li>
-                  <a href="">個別相談でのお約束</a>
+                  <a href="#promise">個別相談でのお約束</a>
                 </li>
                 <li>
-                  <a href="">会社概要</a>
+                  <a href="#company">会社概要</a>
                 </li>
               </ul>
             </div>
@@ -312,6 +312,8 @@
           </div>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="reason"></div>
+      <!-- <div id="reason__anchor" class="link__anchor"></div> -->
 
       <!-- works -->
       <section class="works" id="works">
@@ -369,6 +371,8 @@
           </div>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="works"></div>
+      <!-- <div id="works__anchor" class="link__anchor"></div> -->
 
       <!-- cta -->
       <section class="cta" id="cta">
@@ -398,6 +402,7 @@
           </div>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="cta"></div>
 
       <!-- staff -->
       <section class="staff" id="staff">
@@ -416,6 +421,7 @@
         </div>
 
       </section>
+      <div class="js-scroll" data-scroll-id="staff"></div>
 
       <!-- voice -->
       <section class="voice" id="voice">
@@ -433,33 +439,35 @@
                 「毎日家で過ごす時間が楽しく、<br>
                 居心地が良い家になりました」
               </p>
-              <div class="voice__inner">
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter01.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
+              <di class="voice__sheet" id="accordion01">
+                <div class="voice__inner">
+                  <div class="voice__inner__img" data-modal="01">
+                    <img src="./img/voice_letter01.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
+                  <div class="voice__inner__img" data-modal="02">
+                    <img src="./img/voice_letter02.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
+                  <div class="voice__inner__img" data-modal="03">
+                    <img src="./img/voice_letter03.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
                 </div>
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter02.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
-                </div>
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter03.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
-                </div>
-              </div>
+              </di class="voice__sheet">
               <div class="voice__btn">
-                <p class="voice__btn__txt" id="js-accordion" data-accordion="01">
+                <p class="voice__btn__txt" data-accordion="01">
                   詳しく見る
                 </p>
               </div>
-              <span class="voice__icon">
-                <img src="./img/voice_icon01.svg" alt="">
+              <span class="voice__icon icon01">
+                <img src="./img/voice_icon02.svg" alt="">
               </span>
             </div>
             <div class="voice__wrapper">
@@ -470,34 +478,36 @@
                 「安心してお願いできる担当者が居てくれることは
                 何より心強い」
               </p>
-              <div class="voice__inner">
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter04.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
-                </div>
+              <div class="voice__sheet" id="accordion02">
+                <div class="voice__inner">
+                  <div class="voice__inner__img" data-modal="04">
+                    <img src="./img/voice_letter04.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
 
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter05.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
-                </div>
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter06.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
+                  <div class="voice__inner__img" data-modal="05">
+                    <img src="./img/voice_letter05.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
+                  <div class="voice__inner__img" data-modal="06">
+                    <img src="./img/voice_letter06.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
                 </div>
               </div>
               <div class="voice__btn">
-                <p class="voice__btn__txt">
+                <p class="voice__btn__txt" data-accordion="02">
                   詳しく見る
                 </p>
               </div>
-              <span class="voice__icon">
-                <img src="./img/voice_icon01.svg" alt="">
+              <span class="voice__icon icon02">
+                <img src="./img/voice_icon02.svg" alt="">
               </span>
             </div>
             <div class="voice__wrapper">
@@ -507,38 +517,123 @@
               <p class="voice__txt">
                 「エイジングハウスを選んで本当に良かった」
               </p>
-              <div class="voice__inner">
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter07.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
-                </div>
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter08.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
-                </div>
-                <div class="voice__inner__img">
-                  <img src="./img/voice_letter09.jpg" alt="">
-                  <span>
-                    <img src="./img/voice_icon03.svg">
-                  </span>
+              <div class="voice__sheet" id="accordion03">
+                <div class="voice__inner">
+                  <div class="voice__inner__img" data-modal="07">
+                    <img src="./img/voice_letter07.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
+                  <div class="voice__inner__img" data-modal="08">
+                    <img src="./img/voice_letter08.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
+                  <div class="voice__inner__img" data-modal="09">
+                    <img src="./img/voice_letter09.jpg" alt="">
+                    <span>
+                      <img src="./img/voice_icon03.svg">
+                    </span>
+                  </div>
                 </div>
               </div>
               <div class="voice__btn">
-                <p class="voice__btn__txt">
+                <p class="voice__btn__txt" data-accordion="03">
                   詳しく見る
                 </p>
               </div>
-              <span class="voice__icon">
-                <img src="./img/voice_icon01.svg" alt="">
+              <span class="voice__icon icon03">
+                <img src="./img/voice_icon02.svg" alt="">
               </span>
             </div>
           </div>
-        </div>
+          <!-- modal pop-up -->
+          <div class="modal_popup modal_popup01" data-modal="01" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter01.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup02" data-modal="02" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter02.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup03" data-modal="03" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter03.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup04" data-modal="04" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter04.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup05" data-modal="05" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter05.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup06" data-modal="06" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter06.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup07" data-modal="07" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter07.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup08" data-modal="08" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter08.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+          <div class="modal_popup modal_popup09" data-modal="09" style="display: none;">
+            <div class="modal_popup_inner closeModal">
+            </div>
+            <div class="modal_popup_cnt">
+              <span class="closeBtn"><img src="./img/voice_icon04.svg" alt="間取り"></span>
+              <img src="./img/voice_letter09.jpg">
+            </div>
+            <div class="closeBtn"></div>
+          </div>
+
       </section>
+      <div class="js-scroll" data-scroll-id="voice"></div>
 
       <!-- qna -->
       <section class="qna" id="qna">
@@ -563,13 +658,13 @@
             <!-- A1 -->
             <div class="qna__inner-answer">
               <div class="qna__txt">
-                <p class="qna__txt__short">
+                <p class="qna__txt__short" id="js-qna__accordion" data-accordion="01">
                   費用の目安に関するご説明だけでなく、無理のない資金計画もお手伝いします！
                   <span class="qna__btn">
-                    <small class="qna__btn__txt more01">click</small>
+                    <small class="qna__btn__txt">click</small>
                   </span>
                 </p>
-                <p class="qna__txt__more">
+                <p class="qna__txt__more more01">
                   お家づくりには、建築費に加え、さまざまな費用が発生します。AGEING
                   HOUSEでは、公的機関のデータを基にしたライフシミュレーションで最適な予算を算出。綿密な調査で総費用を考慮し、追加費用が発生するすべてのコストを把握することができます。
                   費用についてはもちろん、お客様にとって最適な住宅ローンについてもご説明します。
@@ -595,13 +690,13 @@
             <!-- A2 -->
             <div class="qna__inner-answer">
               <div class="qna__txt">
-                <p class="qna__txt__short">
+                <p class="qna__txt__short" id="js-qna__accordion" data-accordion="02">
                   費用の目安に関するご説明だけでなく、無理のない資金計画もお手伝いします！
                   <span class="qna__btn">
                     <small class="qna__btn__txt">click</small>
                   </span>
                 </p>
-                <p class="qna__txt__more">
+                <p class="qna__txt__more more02">
                   お家づくりには、建築費に加え、さまざまな費用が発生します。AGEING
                   HOUSEでは、公的機関のデータを基にしたライフシミュレーションで最適な予算を算出。綿密な調査で総費用を考慮し、追加費用が発生するすべてのコストを把握することができます。
                   費用についてはもちろん、お客様にとって最適な住宅ローンについてもご説明します。
@@ -627,13 +722,13 @@
             <!-- A3 -->
             <div class="qna__inner-answer">
               <div class="qna__txt">
-                <p class="qna__txt__short">
+                <p class="qna__txt__short" id="js-qna__accordion" data-accordion="03">
                   費用の目安に関するご説明だけでなく、無理のない資金計画もお手伝いします！
                   <span class="qna__btn">
                     <small class="qna__btn__txt">click</small>
                   </span>
                 </p>
-                <p class="qna__txt__more">
+                <p class="qna__txt__more more03">
                   お家づくりには、建築費に加え、さまざまな費用が発生します。AGEING
                   HOUSEでは、公的機関のデータを基にしたライフシミュレーションで最適な予算を算出。綿密な調査で総費用を考慮し、追加費用が発生するすべてのコストを把握することができます。
                   費用についてはもちろん、お客様にとって最適な住宅ローンについてもご説明します。
@@ -646,6 +741,7 @@
             </div>
           </div>
       </section>
+      <div class="js-scroll" data-scroll-id="qna"></div>
 
       <!-- cta -->
       <section class="cta" id="cta">
@@ -675,6 +771,7 @@
           </div>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="cta"></div>
 
       <!-- access -->
       <section class="access" id="access">
@@ -702,6 +799,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="access"></div>
 
       <!-- contract -->
       <section class="contact" id="contact">
@@ -712,6 +810,7 @@
           </h2>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="contact"></div>
 
       <!-- promise -->
       <section class="promise" id="promise">
@@ -769,6 +868,7 @@
           </div>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="promise"></div>
 
       <!-- flow -->
       <section class="flow" id="flow">
@@ -828,6 +928,7 @@
           </div>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="flow"></div>
 
       <!-- company -->
       <section class="company" id="company">
@@ -982,6 +1083,7 @@
           </div>
         </div>
       </section>
+      <div class="js-scroll" data-scroll-id="company"></div>
 
       <!-- footer -->
       <footer class="footer" id="footer">
@@ -1068,7 +1170,7 @@
   });
 
   //voice_accordion
-  $('#js-accordion').on('click', function () {
+  $('.voice__btn__txt').on('click', function () {
     $(this).toggleClass('is-active');
 
     let accordionNum = $(this).data('accordion');
@@ -1076,6 +1178,7 @@
 
     if ($(this).hasClass('is-active')) {
       $(this).find('p').text('閉じる');
+      console.log(this);
       $('.icon' + accordionNum).find('img').attr('src', './img/voice_icon01.svg');
     } else {
       $(this).find('p').text('詳しく見る');
@@ -1084,10 +1187,48 @@
   });
 
   //qna_accordion
-  $('.js-qna__accordion').on('click', function () {
+  $('.qna__txt__short').on('click', function () {
+    console.log("click!!");
     $(this).toggleClass('is-active');
     let accordionNum = $(this).data('accordion');
     $('.more' + accordionNum).slideToggle();
+  });
+
+  //modal
+  $(function () {
+    $('.voice__inner__img').click(function () {
+      let modalNumber = $(this).data('modal');
+      $('.modal_popup' + modalNumber).fadeIn();
+    });
+    $('.closeModal , .closeBtn').click(function () {
+      $('.modal_popup').fadeOut();
+    });
+  });
+
+  //scroll
+  $(function () {
+    $(document).ready(function () {
+      scrollAnimation();
+    });
+    $(window).scroll(function () {
+      scrollAnimation();
+    });
+    function scrollAnimation() {
+      $('.js-scroll').each(function () {
+        let POS = $(this).offset().top;
+        let scroll = $(window).scrollTop();
+        let windowHeight = window.innerHeight;
+        if (scroll + windowHeight - 300 > POS) {
+          let scrollId = $(this).data("scroll-id");
+
+          $('.js-anchor').removeClass('is-current');
+          $('.header__nav__item-' + scrollId).addClass('is-current');
+          //$(scrollId).addClass('is-current');
+          //$('.header__nav__item').addClass('is-current');
+          //console.log(scrollId)
+        }
+      });
+    }
   });
 </script>
 
